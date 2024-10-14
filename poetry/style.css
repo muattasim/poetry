@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.line-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Background shadow for diary page */
+    border-radius: 10px;
+}
+
+.line-entry {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08); /* Soft 3D background shadow */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.line-entry:hover {
+    transform: translateY(-5px); /* 3D hover effect to lift the element */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.line-title {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.attitude-line {
+    font-size: 18px;
+    color: #666;
+}
+.line-entry {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08); /* Soft 3D background shadow */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Animation on hover & opacity */
+    opacity: 1;
+}
+
+.line-entry.clicked {
+    transform: scale(1.05); /* Scale up when clicked */
+    opacity: 0.5; /* Fades out a bit on click */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition on click */
+}
+
+.line-entry:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
